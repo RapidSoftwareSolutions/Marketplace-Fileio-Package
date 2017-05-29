@@ -1,0 +1,66 @@
+{
+  "package": "Fileio",
+  "tagline": "Fileio API",
+  "description": "Fileio",
+  "image": "http:\/\/logo.clearbit.com\/file.io",
+  "repo": "https:\/\/github.com\/RapidSoftwareSolutions\/Marketplace-Fileio-Package",
+  "keywords": [
+  ],
+  "accounts": {
+    "domain": "file.io",
+    "credentials": [
+    ]
+  },
+  "blocks": [
+    {
+      "name": "uploadFile",
+      "description": "Upload the file",
+      "args": [
+        {
+          "name": "file",
+          "type": "File",
+          "info": "File to upload",
+          "required": true
+        },
+        {
+          "name": "expires",
+          "type": "String",
+          "info": "The query param expires must be a positive integer which, by default, represents the number of days until the file will be deleted (defaults to 14 days). If you follow it with w, it will be the number of weeks. m for months and y for years.",
+          "required": false
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "downloadFile",
+      "description": "Download the file",
+      "args": [
+        {
+          "name": "fileKey",
+          "type": "String",
+          "info": "key of the file ot download",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    }
+  ]
+}

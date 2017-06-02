@@ -39,28 +39,6 @@
           "info": "Success"
         }
       ]
-    },
-    {
-      "name": "downloadFile",
-      "description": "Download the file",
-      "args": [
-        {
-          "name": "fileKey",
-          "type": "String",
-          "info": "key of the file ot download",
-          "required": true
-        }
-      ],
-      "callbacks": [
-        {
-          "name": "error",
-          "info": "Error"
-        },
-        {
-          "name": "success",
-          "info": "Success"
-        }
-      ]
     }
   ]
 }

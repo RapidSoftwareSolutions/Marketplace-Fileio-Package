@@ -15,11 +15,3 @@ Upload the file
 |--------|-------|----------
 | file   | File  | File to upload
 | expires| String| The query param expires must be a positive integer which, by default, represents the number of days until the file will be deleted (defaults to 14 days). If you follow it with w, it will be the number of weeks. m for months and y for years.
-
-## Fileio.downloadFile
-Download the file
-
-| Field  | Type  | Description
-|--------|-------|----------
-| fileKey| String| key of the file ot download
-

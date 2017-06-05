@@ -1,6 +1,6 @@
        <?php
        $routes = [
-       'downloadFile',
+      
         'uploadFile',
         'metadata'
        ];
